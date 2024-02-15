@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h4 {
+    margin: 0;
+    font-style: italic;
+    color: #666;
+}
+
+.personal-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-details {
+    flex: 1;
+}
+
+.profile-picture {
+    flex: 0 0 auto;
+    /* No permite que la imagen se encoja o expanda */
+}
+
+.profile-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+section {
+    max-width: 800px;
+    /* Ancho máximo para la legibilidad */
+    margin: 20px auto;
+    /* Centrado y espaciado */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    text-align: center;
+    color: #444;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
