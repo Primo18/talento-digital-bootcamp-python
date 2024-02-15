@@ -1,4 +1,8 @@
-# Desarrollo de Aplicaciones Full Stack Python Trainee
+<h1 align="center">Desarrollo de Aplicaciones Full Stack Python Trainee</h1>
+
+<div align="center">
+  <img src="./portada.webp" alt="Front-End" title="Front-End">
+</div>
 
 ## Resumen
 Este programa de formación está diseñado para desarrollar aplicaciones web Full Stack utilizando tecnología Python. El objetivo es solucionar las necesidades de la organización aplicando buenas prácticas de la industria y asegurando un producto de alta calidad. La duración total del programa es de 462 horas.
