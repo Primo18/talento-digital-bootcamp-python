@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.navbar-custom {
+    background-color: #28A745;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-toggler {
+    filter: invert(100%);
+}
+
+
+.price-old {
+    /* text-decoration: line-through; */
+    color: #6c757d;
+}
+
+.price-new {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 1rem 0;
+}
+
+.card-title {
+    color: #212529;
+    font-weight: 400;
+}
+
+.card-subtitle,
+.card-text {
+    color: #707070;
+    font-weight: 300;
+}
