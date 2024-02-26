@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <title>Meet & Coffee</title>
+    <script src="https://kit.fontawesome.com/2ea767a90a.js" crossorigin="anonymous"></script>
+    <title>Simposio VeganDB</title>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     </header>
 
     <main>
-        <section id=" meeting-place">
+        <section id="meeting-place">
             <img src="assets/img/we-work.jpg" alt="We Work">
             <h2>¿Dónde nos juntamos?</h2>
             <p>Todos los martes y viernes, de 19:00 hrs a 22:00 hrs en We Work, calle Baker 133, Providencia, Santiago.
@@ -47,41 +48,55 @@
         </section>
 
         <section id="next-talk">
-            <img src="assets/img/speaker.jpg" alt="Speaker">
-            <h2>Próxima charla</h2>
-            <h3>Big Data para Noobs</h3>
-            <p>Rafaela Valdéz<br>Data Scientist, PhD Theoretical Physics, Carnegie Mellon University.<br>En esta
-                charla
-                revisaremos las técnicas y tecnologías que hacen que sea económico hacer frente a los datos a una
-                escala
-                extrema.</p>
+            <div class="wrapper">
+                <img src="assets/img/speaker.jpg" alt="Speaker">
+                <div class="speaker-text">
+                    <h2>Próxima charla</h2>
+                    <h3>Big Data para Noobs</h3>
+                    <h4>Rafaela Valdéz</h4>
+                    <span>
+                        Data Scientist, PhD Theoretical Physics, Carneige Mellon
+                        University.
+                    </span>
+                    <p>En esta
+                        charla
+                        revisaremos las técnicas y tecnologías que hacen que sea económico hacer frente a los datos a
+                        una
+                        escala
+                        extrema.</p>
+                </div>
+            </div>
         </section>
 
         <section id="previous-events">
-            <h2>Eventos anteriores</h2>
-            <article>
-                <h3>Simposio VeganDB</h3>
-                <!-- Agregar aquí la imagen del evento -->
-                <img src="assets/img/simposio-vegan.jpg" alt="VeganDB">
-            </article>
-            <article>
-                <h3>Machine learning 101</h3>
-                <!-- Agregar aquí la imagen del evento -->
-                <img src="assets/img/machine-learning.jpg" alt="Machine Learning">
-            </article>
-            <article>
-                <h3>Scrum sin scream</h3>
-                <!-- Agregar aquí la imagen del evento -->
-                <img src="assets/img/scrum-sin-scream.jpg" alt="Scrum">
-            </article>
+            <h1 class="event-title">Eventos anteriores</h1>
+            <div class="event-grid">
+                <div class="event">
+                    <a href="./simposio.html"> <img src="./assets/img/simposio-vegan.jpg" alt="Simposio VeganDB">
+                        <p class="event-name">Simposio VeganDB</p>
+                    </a>
+                </div>
+                <div class="event">
+                    <img src="./assets/img/machine-learning.jpg" alt="Machine learning 101">
+                    <p class="event-name">Machine learning 101</p>
+                </div>
+                <div class="event">
+                    <img src="./assets/img/scrum-sin-scream.jpg" alt="Scrum sin scream">
+                    <p class="event-name">Scrum sin scream</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <a href="https://www.facebook.com/"><img src="assets/img/facebook.svg" alt="Facebook"></a>
-        <a href="https://www.twitter.com/"><img src="assets/img/twitter.svg" alt="Twitter"></a>
-        <a href="https://www.instagram.com/"><img src="assets/img/instagram.svg" alt="Instagram"></a>
-        <p>Meet & Coffee 2018. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Meet & Coffe 2024. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>

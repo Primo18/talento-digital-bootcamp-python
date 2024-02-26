@@ -5,6 +5,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 nav {
     background-color: #000F08;
     color: white;
@@ -54,11 +60,134 @@ nav ul li a img {
     margin: 0 auto;
 }
 
-footer {
+.hero-content h2 {
+    font-weight: lighter;
+}
+
+#meeting-place {
+    text-align: center;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+#meeting-place img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#meeting-place h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+#meeting-place p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+
+#next-talk {
+    background: #A4452C 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+    padding: 100px;
+    color: white;
+}
+
+#next-talk .wrapper {
+    width: 800px;
+    margin: auto;
+
+}
+
+#next-talk img {
+    width: 25%;
+}
+
+#next-talk .speaker-text {
+    width: 70%;
+    margin-left: 4%;
+}
+
+#next-talk h2 {
+    font-size: 2.5em;
+}
+
+#next-talk img,
+#next-talk .speaker-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#next-talk .speaker-text span {
+    display: block;
+    margin: 10px 0;
+}
+
+
+#previous-events {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 30px;
+}
+
+.event-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event {
+    width: calc(33% - 10px);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+}
+
+.event-name {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.footer {
     background-color: #000F08;
     color: white;
-    padding: 1em;
-    text-align: center;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 2.5em;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer .copyright {
+    font-size: 16px;
 }
 
 
@@ -74,4 +203,39 @@ footer {
     .hero h2 {
         font-size: 2em;
     }
+}
+
+
+.content-container {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
+.content-container .event-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.content-container .event-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.content-container .event-description {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #555;
+}
+
+.content-container .event-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 48px;
+    margin-bottom: 16px;
 }
