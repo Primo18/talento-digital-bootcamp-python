@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.navbar-custom {
+    background-color: #E83E8C;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+
+.navbar-brand img {
+    width: 132px;
+    height: 53px;
+}
+
+.navbar-toggler {
+    filter: invert(100%);
+}
+
+.title {
+    color: #707070;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.card {
+    margin: 20px;
+}
+
+
+.navbar-footer img {
+    max-height: 100px;
+    margin: 50px;
+}

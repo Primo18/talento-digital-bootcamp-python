@@ -1,0 +1,39 @@
+.border-box {
+    border: 2px solid #000;
+}
+
+.top-bar {
+    border-color: magenta;
+    height: 50px;
+}
+
+
+.sidebar {
+    border-color: blue;
+    height: 200px;
+}
+
+
+.main-content {
+    border-color: yellow;
+}
+
+
+.footer-bar {
+    border-color: green;
+    height: 100px;
+}
+
+.content-box {
+    border-color: darkblue;
+    height: 150px;
+}
+
+.outer-container {
+    border: 2px solid blue;
+    padding: 16px;
+}
+
+.border-wrapper {
+    border: 2px solid orangered;
+}
