@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <style>
+        /* Estilo adicional para visualizar la clase .centrado */
+        .centrado {
+            text-align: center;
+        }
+
+        /* Estilo adicional para visualizar la clase .vacaciones */
+        .vacaciones {
+            display: inline-block;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            /* El color de fondo será cambiado por jQuery */
+        }
+
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Imágenes de ejemplo -->
+    <img id="imagen" class="centrado" src="./img.jpg" alt="Imagen Centrada">
+
+    <!-- Ejemplo de párrafo con enlace -->
+    <p><a href="#" class="encabezado">Enlace Encabezado</a></p>
+
+    <!-- Ejemplo de lista para el punto 11 y 12 -->
+    <ul>
+        <li class="vacaciones">
+            <h2>La Serena, Chile</h2>
+            <span class="valor">$120.000</span>
+        </li>
+    </ul>
+
+    <!-- Inclusión de jQuery desde CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Inclusión del archivo de scripts externo -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
