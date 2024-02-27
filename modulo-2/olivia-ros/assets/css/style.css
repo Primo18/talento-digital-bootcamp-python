@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+.navbar-custom {
+    background-color: #373A3C;
+}
+
+.footer {
+    background-color: #0F0F0F;
+}
+
+.header {
+    background: url('../img/bg-hero.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    height: 608px;
+    width: 100%;
+}
+
+.lead {
+    max-width: 600px;
+}
+
+#about {
+    min-height: 532px;
+}
+
+
+#work {
+    background-color: #17A2B8;
+    min-height: 800px;
+}
+
+.btn-custom {
+    border: 1px solid #56C0E0;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #56C0E0;
+}
+
+
+.contact-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn-enviar {
+    background-color: #17a2b8;
+    border: none;
+    color: white;
+}
