@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --danger: #dc3545;
+    --gray-dark: #373a3c;
+    --gray-light: #dddddd;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.header,
+.footer {
+    background-color: var(--gray-dark);
+    color: var(--white);
+}
+
+.card-body {
+    min-height: 150px;
+    ;
+}
+
+.card-title,
+.title-recipes,
+h1 {
+    font-weight: bold;
+}
+
+#recipeCarousel .carousel-indicators {
+    position: absolute;
+    bottom: -45px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+#recipeCarousel .carousel-indicators [data-bs-target] {
+    background-color: #999;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#recipeCarousel .carousel-indicators .active {
+    background-color: var(--gray-dark)
+}
+
+.featured-recipe {
+    text-align: center;
+}
+
+
+/* Estilos para botones generales */
+.btn {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-color: #d1d3d5;
+    color: black;
+    background-color: white;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #e9ecef;
+    color: black;
+}
+
+
+
+.btn-custom {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #dc3545;
+    border-color: #fff;
+}
