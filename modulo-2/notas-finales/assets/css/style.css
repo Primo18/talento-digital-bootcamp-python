@@ -1,0 +1,6 @@
+.table-custom thead th {
+    background-color: #007bff;
+    /* Azul de Bootstrap */
+    color: white;
+    /* Texto blanco para mejor contraste */
+}
