@@ -24,9 +24,15 @@ $(document).ready(function () {
         $(this).css('color', 'red');
     });
 
-    // Selectores de clase y toggle
-    $('.card-title').on('click', function () {
-        $(this).next('.card-text').toggle();
+    // // Selectores de clase y toggle
+    // $('.card-title').on('click', function () {
+    //     $(this).next('.card-text').toggle();
+    // });
+
+    $('.related-recipes .card-title').on('click', function () {
+        // Aquí usamos .closest('.card') para asegurarnos de afectar solo al contenido de la tarjeta en la que se hizo clic
+        // y luego encontramos todos los .card-text dentro de la sección de Recetas Relacionadas para aplicarles toggle.
+        $(this).closest('.related-recipes').find('.card-text').toggle();
     });
 });
 
