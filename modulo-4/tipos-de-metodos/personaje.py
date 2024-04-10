@@ -4,10 +4,12 @@ class Personaje:
         self.nivel = 1
         self._experiencia = 0
 
+    # Getter para la experiencia
     @property
     def experiencia(self):
         return self._experiencia
 
+    # Setter para la experiencia
     @experiencia.setter
     def experiencia(self, exp):
         self._experiencia += exp
@@ -20,12 +22,15 @@ class Personaje:
         if self.nivel == 1 and self._experiencia < 0:
             self._experiencia = 0
 
+    # Método especial para imprimir el objeto
     def __str__(self):
         return f"NOMBRE: {self.nombre} NIVEL: {self.nivel} EXP: {self._experiencia}"
 
+    # Método especial para comparar si un personaje es mayor que otro
     def __gt__(self, otro):
         return self.nivel > otro.nivel
 
+    # Método especial para comparar si un personaje es menor que otro
     def __lt__(self, otro):
         return self.nivel < otro.nivel
 
