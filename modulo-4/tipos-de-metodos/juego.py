@@ -9,7 +9,7 @@ def jugar():
     jugador = Personaje(nombre)
     orco = Personaje("Orco")
 
-    jugador.obtener_estado()
+    print(jugador)  # Imprime usando __str__
     probabilidad = jugador.probabilidad_vs(orco)
 
     while True:
@@ -19,15 +19,15 @@ def jugar():
             resultado = random.uniform(0, 1) <= probabilidad / 100
             if resultado:
                 print("¡Le has ganado al orco, felicidades!")
-                jugador.asignar_estado(50)
-                orco.asignar_estado(-30)
+                jugador.experiencia += 50  # Modifica directamente la experiencia
+                orco.experiencia -= 30
             else:
                 print("¡Oh no! ¡El orco te ha ganado!")
-                jugador.asignar_estado(-30)
-                orco.asignar_estado(50)
+                jugador.experiencia -= 30
+                orco.experiencia += 50
 
-            jugador.obtener_estado()
-            orco.obtener_estado()
+            print(jugador)  # Usa __str__ para imprimir el estado actualizado
+            print(orco)
             probabilidad = jugador.probabilidad_vs(orco)
         else:
             print("¡Has huido! El orco ha quedado atrás.")

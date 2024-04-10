@@ -2,21 +2,26 @@ class Personaje:
     def __init__(self, nombre):
         self.nombre = nombre
         self.nivel = 1
-        self.experiencia = 0
+        self._experiencia = 0
 
-    def obtener_estado(self):
-        print(f"NOMBRE: {self.nombre} NIVEL: {self.nivel} EXP: {self.experiencia}")
+    @property
+    def experiencia(self):
+        return self._experiencia
 
-    def asignar_estado(self, exp):
-        self.experiencia += exp
-        while self.experiencia >= 100:
+    @experiencia.setter
+    def experiencia(self, exp):
+        self._experiencia += exp
+        while self._experiencia >= 100:
             self.nivel += 1
-            self.experiencia -= 100
-        while self.experiencia < 0 and self.nivel > 1:
+            self._experiencia -= 100
+        while self._experiencia < 0 and self.nivel > 1:
             self.nivel -= 1
-            self.experiencia += 100
-        if self.nivel == 1 and self.experiencia < 0:
-            self.experiencia = 0
+            self._experiencia += 100
+        if self.nivel == 1 and self._experiencia < 0:
+            self._experiencia = 0
+
+    def __str__(self):
+        return f"NOMBRE: {self.nombre} NIVEL: {self.nivel} EXP: {self._experiencia}"
 
     def __gt__(self, otro):
         return self.nivel > otro.nivel
